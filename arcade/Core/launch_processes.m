@@ -96,6 +96,7 @@ end
 if ~isempty(cfg.EyeServer)
     logmessage('Connect to EyeServer')
     EyeServer.Connect();
+    EyeServer.EnableSaccade();
     EyeServer.Start('tmp.edf')
 end
 
